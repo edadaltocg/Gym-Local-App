@@ -32,7 +32,7 @@ def play_game(agent, act_space_len):
         # Get action from agent
         action_n = agent(state_n, act_space_len)
 
-        s.send(str(action_n[0]).encode()) # probably buggy
+        s.send(str(action_n[0]).encode())
 
 def get_agent(choice, state_0, act_space_len):
 
